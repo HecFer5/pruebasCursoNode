@@ -11,7 +11,8 @@ app.get("/", function (req, res) {
 
     res.sendFile(absolutePath)
 })
-app.use(express.static(__dirname+ "public"))
+//app.use(express.static(__dirname+ "/public"))
+app.use('/public', express.static(path.join(__dirname, 'public')))
 
 
 
