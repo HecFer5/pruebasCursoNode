@@ -6,11 +6,12 @@ console.log("Hello World")
 //     res.send("Hello Express");
 //   })
 absolutePath = __dirname + '/views/index.html';
+rutaAbsoluta = __dirname + "/public/style.css"
 app.get("/",function(req, res ){
     
 res.sendFile(absolutePath)
 })
-
+ app.use(path, express.static(rutaAbsoluta))
 
 
 
