@@ -15,7 +15,7 @@ absolutePath = __dirname + '/views/index.html';
 
 // app.use("/public", express.static(__dirname + "/public"));
 // 
-app.url("/json", function (req, res) {
+app.get(__dirname + "/json", function (req, res) {
 
     res.json({"message": "Hello json"})
  //   your-app-url/json
