@@ -14,12 +14,12 @@ absolutePath = __dirname + '/views/index.html';
 // //app.use(express.static(__dirname+ "/public"))
 
 // app.use("/public", express.static(__dirname + "/public"));
-let objeto = {
-    "message": "Hello json"
-}
+// 
 app.get("/json", function (req, res) {
 
-    res.json(objeto)
+    res.json({
+        "message": "Hello json"
+    })
  //   your-app-url/json
 })
 
