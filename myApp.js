@@ -17,10 +17,12 @@ absolutePath = __dirname + '/views/index.html';
 let objeto = {
     "message": "Hello json"
 }
-app.get("/", function (req, res) {
+app.get("/json", function (req, res) {
 
     res.json(objeto)
+ //   your-app-url/json
 })
+
 
 
 
