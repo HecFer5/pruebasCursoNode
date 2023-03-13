@@ -7,14 +7,20 @@ console.log("Hello World")
 //   })
 absolutePath = __dirname + '/views/index.html';
 
+// app.get("/", function (req, res) {
+
+//     res.sendFile(absolutePath)
+// })
+// //app.use(express.static(__dirname+ "/public"))
+
+// app.use("/public", express.static(__dirname + "/public"));
+let objeto = {
+    "message": "Hello json"
+}
 app.get("/", function (req, res) {
 
-    res.sendFile(absolutePath)
+    res.json(objeto)
 })
-//app.use(express.static(__dirname+ "/public"))
-
-app.use("/public", express.static(__dirname + "/public"));
-
 
 
 
