@@ -4,7 +4,7 @@ let app = express();
 // app.get("/",function(req, res) {
 //     res.send("Hello Express");
 //   })
-absolutePath = __dirname + '/views/index.html';
+// absolutePath = __dirname + '/views/index.html';
 
 // app.get("/", function (req, res) {
 
@@ -14,7 +14,7 @@ absolutePath = __dirname + '/views/index.html';
 
 // app.use("/public", express.static(__dirname + "/public"));
 // 
-app.get("/json", function (req, res) {
+app.get("https://boilerplate-express.dariohimo.repl.co/json", function (req, res) {
 
     res.json({"message": "Hello json"})
  //   your-app-url/json
