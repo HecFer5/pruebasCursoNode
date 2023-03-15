@@ -14,7 +14,7 @@ let app = express();
 
 // app.use("/public", express.static(__dirname + "/public"));
 // 
-app.get("https://boilerplate-express.dariohimo.repl.co/json", function (req, res) {
+app.get("/", function (req, res) {
 
     res.json({"message": "Hello json"})
  //   your-app-url/json
