@@ -3,7 +3,7 @@ let express = require('express');
 let app = express();
   
 let mensaje =""
-    if (process.env.MESSAGE_STYLE === "uppercase") {
+    if (process.secrets.MESSAGE_STYLE === "uppercase") {
       mensaje = "Hello World".toUpperCase();
     } else {
       mensaje = "Hello World";
@@ -17,4 +17,4 @@ let mensaje =""
 console.log(mensaje)
   
     
-    app.listen(8080)
+   
